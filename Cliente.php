@@ -1,8 +1,16 @@
 <?php
-
+require_once "Cliente.php";
 class Cliente extends Pessoa{
 
     public $pontos;
+    public $dependente;
+
+    public function _construct()
+    {
+        echo "Executando o construtor";
+        $this->dependente = new Pessoa();
+        //$this->dependente->setNome($parm);
+    }
 
     public function somaPontos($pontos){
         // recuperar os pontos do banco de dados

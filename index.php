@@ -8,7 +8,9 @@ function p($variavel){
     echo "Resultado:".$variavel. "<br>";
 }
 
-   $cl = new Cliente();
+   $cl = new Cliente(); // chamar uma classe 
+   $cl->dependente->setNome("Nome do dependente"); 
+   
    $clv = new ClienteVip();
 
    $cl-> setNome("Nome do cliente");
