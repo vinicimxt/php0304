@@ -7,9 +7,9 @@ class Cliente extends Pessoa{
 
     public function _construct()
     {
-        echo "Executando o construtor";
+        echo "Executando o construtor<br>";
         $this->dependente = new Pessoa();
-        //$this->dependente->setNome($parm);
+        $this->dependente->setNome($parm);
     }
 
     public function somaPontos($pontos){
